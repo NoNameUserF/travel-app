@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.googleLogoWrapper {
+    margin: 0 0 0 auto;
+    max-height: 24px;
+    cursor: pointer;
+}
+
+.showIntoMap {
+    color: var(--color-main-text);
+    border-bottom: 1px solid var(--color-main-text);
+    line-height: 150%;
+}

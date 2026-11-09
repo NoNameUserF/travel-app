@@ -1,0 +1,30 @@
+.wrapperCard {
+    max-width: 100%;
+    border-radius: 16px;
+    position: relative;
+}
+
+.wrapperCard.isForMapCard {
+    border: 1px solid var(--color-primary-background);
+    box-shadow: 0 0 13px 0 var(--color-primary-background);
+    max-width: 400px;
+    padding: 40px 16px 16px;
+    margin: 0;
+}
+
+.activitiesCardCloseButton {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.activitiesCardCloseButton > img {
+    width: 24px;
+    height: 24px;
+}

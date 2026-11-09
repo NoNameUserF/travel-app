@@ -1,0 +1,11 @@
+.placeCardContainer {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width <= 1024px) {
+    .placeCardContainer {
+        margin-top: 8px;
+    }
+}

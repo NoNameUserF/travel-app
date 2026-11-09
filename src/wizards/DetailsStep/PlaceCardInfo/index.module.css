@@ -1,0 +1,9 @@
+.placeCardInfoContainer {
+    margin-top: 8px;
+}
+
+@media (width <= 1024px) {
+    .placeCardInfoContainer {
+        margin-top: 8px;
+    }
+}

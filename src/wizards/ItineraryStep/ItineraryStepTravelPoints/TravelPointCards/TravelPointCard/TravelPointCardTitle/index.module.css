@@ -1,0 +1,57 @@
+.pointTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.pointTitle.isForMapTitle {
+    margin-bottom: 12px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 8px solid var(--color-primary-background);
+    box-shadow: 0 0 0 1.25px var(--color-primary);
+    color: var(--color-default-background);
+    background-color: var(--color-primary);
+}
+
+.pointTitle.isForMapTitle > .circle {
+    width: 24px;
+    height: 24px;
+    border: none;
+    box-shadow: none;
+}
+
+.title {
+    color: var(--color-main-text);
+    line-height: 150%;
+}
+
+.pointTitle.isForMapTitle > .title {
+    font-weight: 500;
+}
+
+@media (width <= 560px) {
+    .pointTitle {
+        margin-bottom: 4px;
+    }
+
+    .circle {
+        width: 32px;
+        height: 32px;
+        border: 6px solid var(--color-primary-background);
+    }
+
+    .title {
+        font-size: 14px;
+    }
+}

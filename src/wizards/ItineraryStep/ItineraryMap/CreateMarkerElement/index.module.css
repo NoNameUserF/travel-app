@@ -1,0 +1,106 @@
+.markerContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--color-primary-background);
+    border: 1px solid var(--color-primary);
+}
+
+.marker.active {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-default-background);
+}
+
+.markerCenter {
+    font-size: 12px;
+    color: var(--color-default-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.marker.active > .markerCenter {
+    background-color: var(--color-primary-background);
+    color: var(--color-primary-background);
+    width: 28px;
+    height: 28px;
+}
+
+.marker:hover::after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--color-main-wizard-five-part-saturation);
+}
+
+.markerTitle {
+    color: var(--color-secondary);
+    padding: 4px 16px;
+    margin-left: -8px;
+    background-color: var(--color-transparent-background);
+    border-radius: 0 4px 4px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.markerTitle.active {
+    background-color: var(--color-default-background);
+}
+
+@media (width > 1024px) {
+    .markerTitle:hover,
+    .marker:hover ~ .markerTitle {
+        background-color: var(--color-default-background);
+        cursor: pointer;
+    }
+}
+
+@media (width <= 1024px) {
+    .marker.active {
+        width: 40px;
+        height: 40px;
+    }
+
+    .marker.active > .markerCenter {
+        width: 24px;
+        height: 24px;
+    }
+
+    .markerTitle {
+        font-size: 12px;
+    }
+
+    .markerTitle:active,
+    .marker:active ~ .markerTitle {
+        background-color: var(--color-default-background);
+        cursor: pointer;
+    }
+}
+
+@media (width <= 560px) {
+    .markerTitle {
+        max-width: 280px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

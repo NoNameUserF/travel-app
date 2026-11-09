@@ -1,0 +1,48 @@
+.placeDetailsContainer {
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.placeDetailsCardDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 24px;
+}
+
+.placeDetailsCardTitle {
+    color: var(--color-main-text);
+    white-space: nowrap;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.placeDetailsCardHeader {
+    color: var(--color-main-text);
+    font-weight: 500;
+    padding-bottom: 4px;
+    line-height: 24px;
+}
+
+.placeDetailsCardHeaderDescription {
+    line-height: 24px;
+}
+
+@media (width <= 1024px) {
+    .placeDetailsContainer {
+        display: block;
+        padding: 0;
+    }
+
+    .placeDetailsCardDescription {
+        padding-left: 0;
+        padding-top: 4px;
+        gap: 4px;
+    }
+    .placeDetailsCardHeader {
+        padding-bottom: 0;
+    }
+}

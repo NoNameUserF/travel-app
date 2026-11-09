@@ -1,0 +1,17 @@
+.headerActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noTabs {
+    justify-content: flex-end;
+}
+
+@media (width <= 1024px) {
+    .headerActions {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        row-gap: 8px;
+    }
+}

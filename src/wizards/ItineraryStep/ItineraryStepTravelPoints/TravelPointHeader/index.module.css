@@ -1,0 +1,16 @@
+.travelPointContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.travelPointButton {
+    max-height: 40px;
+}
+
+@media (width <= 1024px) {
+    .travelPointButton {
+        display: none;
+    }
+}

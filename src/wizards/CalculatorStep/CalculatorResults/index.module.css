@@ -1,0 +1,15 @@
+.actionsBlockContainer {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (width <=1024px) {
+    .actionsBlockContainer {
+        margin-bottom: 8px;
+        gap: 8px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+}

@@ -1,0 +1,108 @@
+.placeCardDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 8px;
+}
+
+.cardTitleBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.cardTile {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.cardTileTitle {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.cardTitleBlockLeft {
+    text-align: left;
+    width: 56%;
+}
+
+.cardTitle {
+    gap: 8px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.cardTitleText {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cardTitlelocationText {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.cardReasonBlock {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: none;
+    margin-top: 8px;
+}
+
+.cardReason {
+    color: var(--color-primary);
+    text-align: left;
+    margin-left: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.cardDescription {
+    line-height: 24px;
+}
+
+@media (width <= 1024px) {
+    .cardTitleBlock {
+        display: block;
+        margin-top: 0;
+    }
+
+    .cardTitleText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cardTitlelocationText {
+        font-size: 16px;
+    }
+
+    .cardTitleBlockLeft {
+        width: 100%;
+    }
+
+    .cardTile {
+        padding: 16px;
+        row-gap: 8px;
+    }
+    .cardTileTitle img,
+    .cardTitle img {
+        height: 20px;
+    }
+
+    .cardReasonBlock {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 4px 4px 0;
+    }
+
+    .placeCardDetailsContainer {
+        row-gap: 8px;
+    }
+}

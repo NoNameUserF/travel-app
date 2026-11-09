@@ -1,0 +1,88 @@
+.travelPointCards {
+    padding: 24px;
+}
+
+.travelPointCardsHeaderSeparator {
+    margin-block: 16px;
+}
+
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.dayTitle {
+    padding-bottom: 8px;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-main-text);
+}
+
+.travelPointsActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.mapButton {
+    height: auto;
+    padding: 8px 16px;
+}
+
+.internalGsuSeparatorStyles {
+    margin-block: 24px;
+}
+
+@media (width <= 1024px) {
+    .travelPointCardsHeaderSeparator {
+        display: none;
+    }
+
+    .travelPointCards {
+        padding: 16px;
+    }
+
+    .headerInfo {
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    .dayTitle {
+        padding-bottom: 0;
+    }
+
+    .dayInfo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .travelPointsActions {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mapButton {
+        width: 164px;
+    }
+
+    .internalGsuSeparatorStyles {
+        margin-block: 16px;
+    }
+}

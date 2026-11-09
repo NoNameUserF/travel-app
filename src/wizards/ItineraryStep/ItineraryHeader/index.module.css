@@ -1,0 +1,23 @@
+.itineraryHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .title { */
+
+/*    font-size: 14px; */
+
+/*    font-weight: 600; */
+
+/*    line-height: 150%; */
+
+/* } */
+
+@media (width <= 560px) {
+    .itineraryHeader {
+        flex-direction: column-reverse;
+        align-items: end;
+        row-gap: 8px;
+    }
+}

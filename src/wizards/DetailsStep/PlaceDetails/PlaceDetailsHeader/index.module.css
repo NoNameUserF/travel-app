@@ -1,0 +1,38 @@
+.detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardImg {
+    width: 100%;
+    aspect-ratio: 400 / 222;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (width <= 1024px) {
+    .detailsWrapper {
+        row-gap: 8px;
+        margin-bottom: 0;
+    }
+
+    .cardImg {
+        max-height: 182px;
+    }
+
+    .headerActions {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        row-gap: 8px;
+    }
+}
